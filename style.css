@@ -1,0 +1,47 @@
+body{
+    /* display: flex; */
+    height: 90vh;
+    background-color:  whitesmoke;
+    color: rgba(0, 23, 31, 1);
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+#header{
+    flex-direction: column;
+    text-align: center;
+}
+#container{
+    width:100%;
+    min-height: 70%;
+    display: none;
+}
+#chore_name{
+    width: 50%;
+    text-align: center;
+}
+
+#student_name{
+    width: 50%;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#filler{
+    color:whitesmoke;
+}
+html{
+    scroll-behavior: smooth
+}
+
+#button_div{
+    text-align: center;
+}
+button{
+    font-family: 'Playfair Display', serif;
+    margin-top:10%;
+    padding:10px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 23, 31, 1);
+    background-color: #F2ECEF;
+    font-size: 20px
+}
