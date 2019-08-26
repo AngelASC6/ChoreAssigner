@@ -43,5 +43,10 @@ button{
     border-radius: 999px;
     border: 1px solid rgba(0, 23, 31, 1);
     background-color: #F2ECEF;
-    font-size: 20px
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 5px;
+    font-size: 21px;
 }
