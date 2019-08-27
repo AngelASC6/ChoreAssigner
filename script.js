@@ -31,18 +31,12 @@ function displayChores() {
         let randomNum = parseInt(Math.random() * choreArray.length)
         let randomChore = choreArray[randomNum]
         let choreItemRef
+
+
         //assigns two students to a chore
         choreRef.innerHTML += `<h3 class="animated bounceInDown chore_item">${randomChore}</h3> <br>`
         //gives it a refrence
         choreItemRef = document.getElementsByClassName("chore_item")
-        //targets a specific one in the array
-        choreItemNumber = choreItemRef[counter]
-        //removes the animation once it animates
-       choreItemNumber.addEventListener('animationend', function() {choreItemNumber.classList.remove("animated","bounceInDown"); })
-        console.log(choreItemRef)
-        console.log(counter)
-        
-        
         //adds another name if the two person chore comes up
         if(randomChore == twoPersonChore){
             choreRef.innerHTML += "<h3 id='filler'>Test idk</h3><br>"
@@ -54,6 +48,13 @@ function displayChores() {
             },500)
 
         }
+        //targets a specific one in the array
+        choreItemNumber = choreItemRef[counter]
+        //removes the animation once it animates
+        choreItemNumber.addEventListener('animationend', function() {choreItemNumber.classList.remove("animated","bounceInDown"); })
+        console.log(choreItemRef)
+        console.log(counter)
+        
         choreArray.splice(randomNum,1)
         counter++
     },1000)
