@@ -5,11 +5,11 @@ let containerRef = document.getElementById("container")
 let button = document.querySelector("button")
 let h3 = document.querySelector("h3")
 //makes the student and chore arrays
-let studentNames = "studentA studentB studentC studentD studentE studentF studentG studentH studentI"
-let choreList = "choreA choreB choreC choreD choreE choreF choreG choreH"
-let studentArray = studentNames.split(" ")
-let choreArray = choreList.split(" ")
-let twoPersonChore = choreArray[3]
+let studentNames = "James,Michael,Alain,Andre,Malik,Kurren,Larry,Sebastion,Jiaho,Sibo"
+let choreList = "Vaccum Upstairs,Vaccum Downstairs, Vaccum Commonroom, Upstairs Trash, Downstairs Trash, Mop Kitchen, Bathroom"
+let studentArray = studentNames.split(",")
+let choreArray = choreList.split(",")
+let twoPersonChore = "none"
 let counter = 0
 let studentCounter = 0
 let choreItemRef =[]
