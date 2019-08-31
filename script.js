@@ -6,10 +6,10 @@ let button = document.querySelector("button")
 let h3 = document.querySelector("h3")
 //makes the student and chore arrays
 let studentNames = "James,Michael,Alain,Andre,Malik,Kurren,Larry,Sebastion,Jiaho,Sibo"
-let choreList = "Vaccum Upstairs,Vaccum Downstairs, Vaccum Commonroom, Upstairs Trash, Downstairs Trash, Mop Kitchen, Bathroom"
+let choreList = "Vaccum Upstairs,Vaccum Downstairs, Vaccum Commonroom, Upstairs Trash, Downstairs Trash, Stairs, Bathroom, Clean Utility room,Basement"
 let studentArray = studentNames.split(",")
 let choreArray = choreList.split(",")
-let twoPersonChore = "none"
+let twoPersonChore = choreArray[6]
 let counter = 0
 let studentCounter = 0
 let choreItemRef =[]
