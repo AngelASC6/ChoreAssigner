@@ -5,11 +5,13 @@ let containerRef = document.getElementById("container")
 let button = document.querySelector("button")
 let h3 = document.querySelector("h3")
 //makes the student and chore arrays
-let studentNames = "James,Michael,Alain,Andre,Malik,Kurren,Larry,Sebastion,Jiaho,Sibo"
-let choreList = "Vaccum Upstairs,Vaccum Downstairs, Vaccum Commonroom, Upstairs Trash, Downstairs Trash, Stairs, Bathroom, Clean Utility room,Basement"
+let studentNames = "James,Adeoluwa,Tyler,Michael,Alain,Andre,Malik,Kurren,Larry,Sebastian,Jiaho,Sibo,Nicholas"
+let choreList = "Vaccum Upstairs,Vaccum Downstairs, Vaccum Commonroom, Upstairs Trash, Downstairs Trash, Stairs, Bathroom ,Basement"
 let studentArray = studentNames.split(",")
 let choreArray = choreList.split(",")
 let twoPersonChore = choreArray[6]
+let twoPersonChore2 = choreArray[5]
+let twoPersonChore3 = choreArray[7]
 let counter = 0
 let studentCounter = 0
 let choreItemRef =[]
@@ -38,7 +40,7 @@ function displayChores() {
         //gives it a refrence
         choreItemRef = document.getElementsByClassName("chore_item")
         //adds another name if the two person chore comes up
-        if(randomChore == twoPersonChore){
+        if(randomChore == twoPersonChore || randomChore == twoPersonChore2 || randomChore == twoPersonChore3){
             choreRef.innerHTML += "<h3 id='filler'>Test idk</h3><br>"
             setTimeout(function(){
                 let randomNum = parseInt(Math.random() * studentArray.length)
